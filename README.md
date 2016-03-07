@@ -1,6 +1,6 @@
 # wechat
 
-> The js library project
+> The wechat server
 
 ## Build Setup
 
