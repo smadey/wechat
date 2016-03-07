@@ -1,7 +1,7 @@
-export const port = 8093
+exports.port = 8093
 
-export const appid = 'wxfb8a5f6d7b69367c'
+exports.appid = 'wxfb8a5f6d7b69367c'
 
-export const token = 'smadey'
+exports.token = 'smadey'
 
-export const encodingAESKey = '11M726dkKhJIdmrD2A3yNjudxfEmYXyEXeyuEhO8KUM'
+exports.encodingAESKey = '11M726dkKhJIdmrD2A3yNjudxfEmYXyEXeyuEhO8KUM'
