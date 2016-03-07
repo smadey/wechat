@@ -17,9 +17,7 @@ var events = [
   {
     type: 'subscribe',
     handler: function (username, context) {
-      console.log('用户"' + username + '"订阅了！');
-
-      var textTips = texts.map(function (d, i) {
+      var textTips = texts.map(function (d, i) { // 用户订阅
         return (i + 1) + '.' + d.title + '\n' + d.content;
       }).join('\n\n');
 
@@ -28,8 +26,7 @@ var events = [
   },
   {
     type: 'unsub',
-    handler: function (username, context) {
-      console.log('用户' + username + '取消订阅了！');
+    handler: function (username, context) { // 用户取消订阅
     }
   }
 ];
@@ -46,10 +43,10 @@ var texts = [
   },
   {
     title: 'test',
-    content: '提交“test:n”返回第n条英文测试结果，如“test:2”返回第3条英文测试结果',
+    content: '提交“test:n”返回第n条英文测试结果，如“test:3”返回第3条英文测试结果',
     reg: /^test:(.+)/,
     handler: function (text) {
-      return 'This the ' + text + ' test result';
+      return 'This the ' + text + 'th test result';
     }
   }
 ];
